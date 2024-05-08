@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-20 14:57:10.499485",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "access_token",
+  "account_id",
+  "column_break_ysmqy",
+  "note",
+  "user_profile_section",
+  "full_name",
+  "email",
+  "column_break_iwzkk",
+  "role",
+  "get_user_profile",
+  "contact_fetch_section",
+  "import_contacts_from_chat_section",
+  "auto_fetch_contacts",
+  "column_break_ghqlz",
+  "fetch_contacts_now",
+  "export_contacts_to_chat_section",
+  "inbox_id",
+  "column_break_akanv",
+  "post_contacts_to_chat",
+  "onehash_chat_support_settings_section",
+  "onehash_chat_support",
+  "widget_type",
+  "widget_position"
+ ],
+ "fields": [
+  {
+   "description": "Login to OneHash Chat Account -> Settings -> Account Settings -> Account ID",
+   "documentation_url": "https://help.onehash.ai/en/article/onehash-chat-introduction-g299r/",
+   "fieldname": "account_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Id",
+   "mandatory_depends_on": "eval:doc.enabled"
+  },
+  {
+   "description": "Login to OneHash Chat Account -> Profile Settings -> Access Token",
+   "documentation_url": "https://help.onehash.ai/en/article/onehash-chat-introduction-g299r/",
+   "fieldname": "access_token",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Access Token ",
+   "mandatory_depends_on": "eval:doc.enabled"
+  },
+  {
+   "fieldname": "user_profile_section",
+   "fieldtype": "Section Break",
+   "label": "User Profile"
+  },
+  {
+   "fieldname": "contact_fetch_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Fetch"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_fetch_contacts",
+   "fieldtype": "Check",
+   "label": "Auto Fetch Contacts"
+  },
+  {
+   "fieldname": "column_break_ghqlz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fetch_contacts_now",
+   "fieldtype": "Button",
+   "label": "Fetch Contacts from Chat"
+  },
+  {
+   "fieldname": "post_contacts_to_chat",
+   "fieldtype": "Button",
+   "label": "Post Contacts to Chat"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ysmqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "get_user_profile",
+   "fieldtype": "Button",
+   "label": "Update User Profile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "label": "Role",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_iwzkk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "import_contacts_from_chat_section",
+   "fieldtype": "Section Break",
+   "label": "Import Contacts From Chat"
+  },
+  {
+   "fieldname": "export_contacts_to_chat_section",
+   "fieldtype": "Section Break",
+   "label": "Export Contacts to Chat"
+  },
+  {
+   "description": "Click on Conversations -> Select Inbox you want -> In URL copy last number i.e. Inbox ID and paste it Here.",
+   "fieldname": "inbox_id",
+   "fieldtype": "Data",
+   "label": "Inbox ID"
+  },
+  {
+   "fieldname": "column_break_akanv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "HTML",
+   "label": "Note",
+   "options": "<h4>Note :</h4>\n<h5> Already have Account ? <a href=\"https://chat.onehash.ai/app/login\" target=\"_blank\">Login <i class=\"fa fa-sign-in\"></i></a></h5>\n<center>\n<img height=\"100px\" src=\"https://chat.onehash.ai/packs/media/dashboard/assets/images/chat-a06542d766feaecc071c3a2b77f313e8.svg\" width=\"100px\">\n</center>"
+  },
+  {
+   "description": "Applying New Settings will take some Time.",
+   "fieldname": "onehash_chat_support_settings_section",
+   "fieldtype": "Section Break",
+   "label": "OneHash Chat Support Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "onehash_chat_support",
+   "fieldtype": "Check",
+   "label": "Enable OneHash Chat Support"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "default": "standard",
+   "fieldname": "widget_type",
+   "fieldtype": "Select",
+   "label": "Widget Type",
+   "options": "standard\nexpanded_bubble"
+  },
+  {
+   "default": "right",
+   "fieldname": "widget_position",
+   "fieldtype": "Select",
+   "label": "Widget Position",
+   "options": "right\nleft"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-11-02 17:38:59.630554",
+ "modified_by": "Administrator",
+ "module": "Onehash Chat",
+ "name": "OneHash Chat Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

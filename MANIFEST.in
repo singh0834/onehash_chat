@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include onehash_chat *.css
+recursive-include onehash_chat *.csv
+recursive-include onehash_chat *.html
+recursive-include onehash_chat *.ico
+recursive-include onehash_chat *.js
+recursive-include onehash_chat *.json
+recursive-include onehash_chat *.md
+recursive-include onehash_chat *.png
+recursive-include onehash_chat *.py
+recursive-include onehash_chat *.svg
+recursive-include onehash_chat *.txt
+recursive-exclude onehash_chat *.pyc
